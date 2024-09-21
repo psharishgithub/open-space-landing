@@ -12,7 +12,16 @@ const DevelopmentNotice = () => {
         </div>
         <div className="bg-[#ffffff0d] p-6 rounded-lg border border-[#ffffff30]">
           <p className="text-center text-lg max-mobile:text-md text-white font-light">
-            This website provides an overview of our initiative. We are currently developing a comprehensive main website that will include all functionalities. Stay tuned for updates and the launch of our full-featured platform!
+            This website provides an overview of our initiative. We are currently developing a comprehensive main website that will include all functionalities. Stay tuned for updates and the launch of our full-featured platform! Follow us on{' '}
+            <a
+              href="https://www.instagram.com/openspace_rec/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline"
+            >
+              Instagram
+            </a>{' '}
+            for the latest news.
           </p>
         </div>
       </div>

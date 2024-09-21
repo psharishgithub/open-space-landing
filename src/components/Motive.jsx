@@ -5,11 +5,11 @@ const Motive = () => {
   return (
     <div
       id="sec-2"
-      className="w-full min-h-screen flex items-center justify-center bg-black py-20"
+      className="w-[80%] m-auto min-h-screen flex items-center justify-center bg-black py-20"
     >
       <div className="w-full max-w-[1200px] px-4 m-auto">
         <div className="flex justify-start max-mobile:justify-center mb-8">
-          <HighlightText className="text-white text-4xl font-semibold mb-8 text-center">
+          <HighlightText className="text-white text-4xl font-semibold mb-1 text-center">
             Our Mission
           </HighlightText>
         </div>
