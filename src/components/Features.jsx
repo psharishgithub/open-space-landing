@@ -2,13 +2,14 @@ import React from "react";
 import P1Slide from "./slide/p1_slide";
 import P2Slide from "./slide/p2_slide";
 import HighlightText from './HighlightText';
+import DevelopmentNotice from './DevelopmentNotice';
 
 const Features = () => {
     return (
         <>
             <div className="w-[80%] m-auto mt-40 mb-32 max-mobile:mt-14 max-mobile:mb-20">
                 <HighlightText className="text-white text-4xl font-semibold mb-8 text-center">
-                    Discover Openspace
+                    About The Platform
                 </HighlightText>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <FeatureCard
@@ -31,8 +32,8 @@ const Features = () => {
                         title="Project Advancement"
                         description="Take your projects to the next level. Get support to launch and advance your initiatives, fostering innovation and growth within our community."
                     />
-
                 </div>
+
 
             </div>
             <P1Slide />

@@ -1,20 +1,23 @@
 import React from 'react';
-import HighlightText from './HighlightText';
 
 const DevelopmentNotice = () => {
   return (
-    <div className="w-full flex items-center justify-center bg-black py-16">
-      <div className="w-full max-w-[1200px] px-4 m-auto">
-        <div className="flex justify-center mb-6">
-          <HighlightText className="text-white text-3xl font-semibold text-center">
-            Website Status
-          </HighlightText>
-        </div>
-        <div className="bg-[#ffffff0d] p-6 rounded-lg border border-[#ffffff30]">
-          <p className="text-center text-lg max-mobile:text-md text-white font-light">
-            This website provides an overview of our initiative. We are currently developing a comprehensive main website that will include all functionalities. Stay tuned for updates and the launch of our full-featured platform!
-          </p>
-        </div>
+    <div className="min-h-screen flex items-center justify-center bg-black text-white">
+      <div className="w-full max-w-4xl px-4 py-8 text-center">
+        <h2 className="text-3xl font-light mb-6">Welcome to Openspace</h2>
+        <p className="text-xl mb-8 font-extralight">
+          You're viewing our initiative website. Our main platform is currently under development, 
+          crafting an extraordinary space for student collaboration and innovation.
+        </p>
+        <p className="text-lg mb-8 font-extralight">
+          Explore below to get a glimpse of what's to come in REC's dedicated open-source hub.
+        </p>
+        <button 
+          className="border border-white py-2 px-6 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300"
+          onClick={() => window.scrollTo({top: window.innerHeight, behavior: 'smooth'})}
+        >
+          Discover More
+        </button>
       </div>
     </div>
   );

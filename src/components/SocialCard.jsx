@@ -1,42 +1,23 @@
-import { div } from "three/webgpu";
-import github_svg from "../assets_c/github.svg";
-import insta_svg from "../assets_c/insta.svg";
 import linkedin_svg from "../assets_c/LinkedIn.svg";
+import insta_svg from "../assets_c/insta.svg";
 
 const SocialCard = ({ imageSrc, title, linkedin, insta }) => {
   return (
-    <div
-      className="w-56  rounded-2xl max-mobile:w-40 max-laptop:w-48
-        border backdrop-blur-[10px] border-r-[#c6323223] border-b-[#ffffff2b]
-        border-solid border-[#ffffff79] border-r border-b
-        bg-[#ffffff1a] flex flex-col items-start"
-    >
+    <div className="w-64 h-80 relative overflow-hidden group">
       <img
-        className="object-cover w-full h-full p-3 pb-0 rounded-3xl "
+        className="w-full h-full object-cover"
         src={imageSrc}
-        alt="social card"
+        alt={title}
       />
-      <div className="flex flex-row w-full justify-between">
-        <div
-          className=" pl-3 text-white text-lg font-normal 
-        my-2 max-mobile:text-xs max-laptop:text-base "
-        >
-          {title}
-        </div>
-        <div className="flex flex-row text-white items-center pr-3">
-          <a href={linkedin}>
-            <img
-              src={linkedin_svg}
-              alt="linkedin"
-              className="h-6 mr-3 max-mobile:h-4 max-laptop:h-5 "
-            />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+        <h3 className="text-white text-xl font-bold mb-2">{title}</h3>
+        <div className="flex space-x-4">
+          <a href={linkedin} className="text-white hover:text-gray-300 transition-colors">
+            <img src={linkedin_svg} alt="LinkedIn" className="h-6 w-6" />
           </a>
-          <a href={insta}>
-            <img
-              src={insta_svg}
-              alt="insta"
-              className="h-6 max-mobile:h-4 max-laptop:h-5 "
-            />
+          <a href={insta} className="text-white hover:text-gray-300 transition-colors">
+            <img src={insta_svg} alt="Instagram" className="h-6 w-6" />
           </a>
         </div>
       </div>

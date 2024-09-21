@@ -9,7 +9,7 @@ const Motive = () => {
     >
       <div className="w-full max-w-[1200px] px-4 m-auto">
         <div className="flex justify-start max-mobile:justify-center mb-8">
-          <HighlightText className="text-white text-4xl font-semibold mb-8 text-center">
+          <HighlightText className="text-white text-4xl font-semibold text-center">
             Our Mission
           </HighlightText>
         </div>

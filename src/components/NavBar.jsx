@@ -19,28 +19,21 @@ const Navbar = () => {
               Home
             </a>
           </div>
-          <div className="  ">
-            <a
-              href="#sec-2"
-              className="font-medium hover:cursor-pointer text-white hover:[text-shadow:_0_0_12px_#fff] duration-100"
-            >
-              Mission
-            </a>
-          </div>
-          <div className=" ">
-            <a
-              href="#community"
-              className="font-medium hover:cursor-pointer text-white hover:[text-shadow:_0_0_12px_#fff] duration-100"
-            >
-              Community
-            </a>
-          </div>
           <div className=" ">
             <a
               href="#faq"
               className="font-medium hover:cursor-pointer text-white hover:[text-shadow:_0_0_12px_#fff] duration-100"
             >
               FAQ
+            </a>
+          </div>
+          
+          <div className=" ">
+            <a
+              href="#community"
+              className="font-medium hover:cursor-pointer text-white hover:[text-shadow:_0_0_12px_#fff] duration-100"
+            >
+              Community
             </a>
           </div>
         </div>
