@@ -9,12 +9,13 @@ import { EffectComposer, Glitch, ColorAverage } from "@react-three/postprocessin
 import { GlitchMode, BlendFunction } from "postprocessing";
 import DevelopmentNotice from './DevelopmentNotice';
 
-const ModelWithAnimation = ({ position = [0, 0, 0] }) => {
+const ModelWithAnimation = ({ endPosition = [0, 0, 0], mobileScale = 1 }) => {
   const { scene, animations } = useGLTF(lock);
   const mixerRef = useRef();
   const actionRef = useRef();
   const groupRef = useRef();
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [currentPosition, setCurrentPosition] = useState([-20, 0, 0]); // Start from further left
   const { camera } = useThree();
 
   useEffect(() => {
@@ -33,6 +34,20 @@ const ModelWithAnimation = ({ position = [0, 0, 0] }) => {
         setAnimationComplete(true);
       });
     }
+
+    // Animate position
+    const animatePosition = () => {
+      setCurrentPosition((prev) => {
+        const newX = Math.min(prev[0] + 0.1, endPosition[0]); // Move 0.1 units per frame
+        return [newX, prev[1], prev[2]];
+      });
+
+      if (currentPosition[0] < endPosition[0]) {
+        requestAnimationFrame(animatePosition);
+      }
+    };
+
+    animatePosition();
 
     // Center the model
     const box = new THREE.Box3().setFromObject(scene);
@@ -76,26 +91,29 @@ const ModelWithAnimation = ({ position = [0, 0, 0] }) => {
         mixerRef.current.uncacheRoot(scene);
       }
     };
-  }, [animations, scene, camera]);
+  }, [animations, scene, camera, endPosition]);
 
   useFrame((state, delta) => {
     if (mixerRef.current) {
       mixerRef.current.update(delta);
     }
+    if (groupRef.current) {
+      groupRef.current.position.set(...currentPosition);
+    }
   });
 
   return (
-    <group ref={groupRef} position={position}>
-      <primitive object={scene} scale={[0.5, 0.5, 0.5]} />
-      <hemisphereLight intensity={0.5} color="#ffffff" groundColor="#444444" />
-      <directionalLight position={[-5, 2, 5]} intensity={0.8} />
-      <pointLight position={[-8, 3, 8]} intensity={0.7} />
-      <pointLight position={[5, -2, -5]} intensity={0.3} />
+    <group ref={groupRef}>
+      <primitive object={scene} scale={[0.5 * mobileScale, 0.5 * mobileScale, 0.5 * mobileScale]} />
+      <hemisphereLight intensity={0.845} color="#ffffff" groundColor="#444444" />
+      <directionalLight position={[-5, 2, 5]} intensity={1.352} />
+      <pointLight position={[-8, 3, 8]} intensity={1.183} />
+      <pointLight position={[5, -2, -5]} intensity={0.507} />
       <spotLight
         position={[-10, 5, 5]}
         angle={0.6}
         penumbra={1}
-        intensity={0.9}
+        intensity={1.521}
         castShadow
       />
     </group>
@@ -147,7 +165,24 @@ const GlitchEffect = () => {
 };
 
 const HomeC = () => {
-  const modelPosition = [-10, 0, 0];
+  const [modelEndPosition, setModelEndPosition] = useState([-10, 0, 0]); // Original position
+  const [mobileScale, setMobileScale] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) { // Assuming 768px is your mobile breakpoint
+        setMobileScale(1.5); // Increase scale by 50% for mobile
+        setModelEndPosition([-14, 0, 0]); // Move more to the left for mobile
+      } else {
+        setMobileScale(1);
+        setModelEndPosition([-10, 0, 0]); // Original position for larger screens
+      }
+    };
+
+    handleResize(); // Set initial values
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
@@ -156,22 +191,22 @@ const HomeC = () => {
         className="flex w-full h-screen m-auto"
       >
         <div className="w-full flex justify-between mx-auto max-mobile:flex-col">
-          <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[64%] max-mobile:h-[48%] max-mobile:mx-auto max-mobile:ml-auto">
+          <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[80%] max-mobile:h-[60%] max-mobile:mx-auto max-mobile:ml-auto">
             <div className="h-full">
               <Canvas key={Date.now()}>
-                <ambientLight intensity={4.2} />
-                <directionalLight position={[-5, 2, 5]} intensity={12.6} />
-                <pointLight position={[-8, 3, 8]} intensity={10.5} />
-                <pointLight position={[5, -2, -5]} intensity={5.25} />
+                <ambientLight intensity={7.098} />
+                <directionalLight position={[-5, 2, 5]} intensity={21.294} />
+                <pointLight position={[-8, 3, 8]} intensity={17.745} />
+                <pointLight position={[5, -2, -5]} intensity={8.8725} />
                 <spotLight
                   position={[-10, 5, 5]}
                   angle={0.6}
                   penumbra={1}
-                  intensity={12.6}
+                  intensity={21.294}
                   castShadow
                   target-position={[0, 0, 0]}
                 />
-                <ModelWithAnimation position={modelPosition} />
+                <ModelWithAnimation endPosition={modelEndPosition} mobileScale={mobileScale} />
                 <OrbitControls
                   enableZoom={false}
                   enablePan={false}
@@ -193,8 +228,6 @@ const HomeC = () => {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 };
