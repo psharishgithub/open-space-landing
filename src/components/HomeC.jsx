@@ -154,7 +154,7 @@ const HomeC = () => {
             <HighlightText className="text-white text-4xl text-right font-semibold max-mobile:text-2xl max-mobile:text-center max-mobile:mt-6">
               Collaborate. Code. Create
             </HighlightText>
-            <p className="text-right text-xl max-laptop:text-base mt-3 w-[80%] text-white font-light max-mobile:text-center max-mobile:m-auto max-mobile:text-sm max-mobile:w-full max-mobile:mt-2">
+            <p className="text-right text-xl max-laptop:text-base mt-3 w-[80%] text-white font-light max-mobile:text-center max-mobile:m-auto max-mobile:text-md max-mobile:w-full max-mobile:mt-2">
               Welcome to Openspace – REC's hub for open-source innovation! Discover groundbreaking projects, collaborate with peers, and contribute to impactful initiatives. Whether you're a coding enthusiast or a creative visionary, Openspace is your platform to transform ideas into reality. Join our community where innovation thrives, and together, we'll shape the future of technology!
             </p>
           </div>
