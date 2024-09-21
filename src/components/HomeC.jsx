@@ -2,8 +2,10 @@ import * as THREE from "three";
 import lock from "../assets_c/lock_4.glb";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import HighlightText from './HighlightText';
+import { EffectComposer, Glitch, ColorAverage } from "@react-three/postprocessing";
+import { GlitchMode, BlendFunction } from "postprocessing";
 
 const ModelWithAnimation = ({ position = [0, 0, 0] }) => {
   const { scene, animations } = useGLTF(lock);
@@ -114,6 +116,34 @@ function generateNoiseTextureData(width, height) {
   return data;
 }
 
+const GlitchEffect = () => {
+  const [isGlitching, setIsGlitching] = useState(false);
+
+  useEffect(() => {
+    const glitchInterval = setInterval(() => {
+      setIsGlitching(true);
+      setTimeout(() => setIsGlitching(false), 50); // Glitch duration: 50ms
+    }, 2000); // Glitch every 2 seconds
+
+    return () => clearInterval(glitchInterval);
+  }, []);
+
+  return (
+    <EffectComposer>
+      <ColorAverage blendFunction={BlendFunction.OVERLAY} opacity={0.2} />
+      <Glitch
+        delay={[0, 0]}
+        duration={[0.05, 0.05]}
+        strength={[0.004, 0.004]}
+        mode={GlitchMode.CONSTANT_WILD}
+        active={isGlitching}
+        ratio={0.02}
+        columns={0.05}
+      />
+    </EffectComposer>
+  );
+};
+
 const HomeC = () => {
   const modelPosition = [-10, 0, 0];
 
@@ -146,6 +176,7 @@ const HomeC = () => {
                   minPolarAngle={Math.PI / 4}
                   maxPolarAngle={Math.PI / 1.5}
                 />
+                <GlitchEffect />
               </Canvas>
             </div>
           </div>
