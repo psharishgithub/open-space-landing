@@ -6,7 +6,9 @@ import HomeC from "./components/HomeC";
 import Motive from "./components/Motive";
 import GlowingBlob from "./components/GlowingBlob";
 import SocialGird from "./components/SocialGird";
-import Features from "./components/Features"; // Add this line
+import Features from "./components/Features"; 
+import FAQ from "./components/FAQ"; 
+import DevelopmentNotice from "./components/DevelopmentNotice"; 
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       <Navbar />
       <HomeC />
       <Motive />
-      <Features /> {/* Add this line */}
-      
+      <Features /> 
+      <FAQ />
+      <DevelopmentNotice />
+
       <FabSocial />
       <SocialGird />
     </>
