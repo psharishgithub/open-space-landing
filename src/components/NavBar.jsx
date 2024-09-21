@@ -35,6 +35,14 @@ const Navbar = () => {
               Community
             </a>
           </div>
+          <div className=" ">
+            <a
+              href="#faq"
+              className="font-medium hover:cursor-pointer text-white hover:[text-shadow:_0_0_12px_#fff] duration-100"
+            >
+              FAQ
+            </a>
+          </div>
         </div>
       </div>
     </header>

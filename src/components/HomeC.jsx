@@ -1,11 +1,13 @@
+import React from 'react';
 import * as THREE from "three";
 import lock from "../assets_c/lock_4.glb";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useRef, useState } from "react";
 import HighlightText from './HighlightText';
 import { EffectComposer, Glitch, ColorAverage } from "@react-three/postprocessing";
 import { GlitchMode, BlendFunction } from "postprocessing";
+import DevelopmentNotice from './DevelopmentNotice';
 
 const ModelWithAnimation = ({ position = [0, 0, 0] }) => {
   const { scene, animations } = useGLTF(lock);
@@ -192,6 +194,7 @@ const HomeC = () => {
         </div>
       </div>
 
+      
     </>
   );
 };
