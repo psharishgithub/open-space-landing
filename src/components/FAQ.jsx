@@ -35,7 +35,7 @@ const FAQ = () => {
     <section id="faq" className="faq-section py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <HighlightText className="text-4xl font-bold text-white inline-block">
+          <HighlightText className="text-white text-4xl font-bold inline-block">
             Frequently Asked Questions
           </HighlightText>
         </div>
@@ -46,8 +46,8 @@ const FAQ = () => {
                 className="flex justify-between items-center w-full text-left bg-[#ffffff0d] p-6 rounded-lg border border-[#ffffff30] hover:bg-opacity-20 transition-all duration-300"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="font-semibold text-lg text-white">{item.question}</span>
-                <span className="text-2xl text-white">{activeIndex === index ? '−' : '+'}</span>
+                <span className="text-white font-semibold text-lg">{item.question}</span>
+                <span className="text-white text-2xl">{activeIndex === index ? '−' : '+'}</span>
               </button>
               {activeIndex === index && (
                 <div className="bg-[#ffffff0d] p-6 rounded-lg border border-[#ffffff30] mt-1">

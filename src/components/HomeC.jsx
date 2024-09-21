@@ -151,10 +151,7 @@ const HomeC = () => {
 
   return (
     <>
-      <div
-        id="home"
-        className="flex w-full h-screen m-auto"
-      >
+      <div id="home" className="flex w-full h-screen m-auto">
         <div className="w-full flex justify-between mx-auto max-mobile:flex-col">
           <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[64%] max-mobile:h-[48%] max-mobile:mx-auto max-mobile:ml-auto">
             <div className="h-full">
@@ -187,14 +184,12 @@ const HomeC = () => {
             <HighlightText className="text-white text-4xl text-right font-semibold max-mobile:text-2xl max-mobile:text-center max-mobile:mt-6">
               Collaborate. Code. Create
             </HighlightText>
-            <p className="text-right text-xl max-laptop:text-base mt-3 w-[80%] text-white font-light max-mobile:text-center max-mobile:m-auto max-mobile:text-md max-mobile:w-full max-mobile:mt-2">
+            <p className="text-white text-right text-xl max-laptop:text-base mt-3 w-[80%] text-white font-light max-mobile:text-center max-mobile:m-auto max-mobile:text-md max-mobile:w-full max-mobile:mt-2">
               Welcome to Openspace – REC's hub for open-source innovation! Discover groundbreaking projects, collaborate with peers, and contribute to impactful initiatives. Whether you're a coding enthusiast or a creative visionary, Openspace is your platform to transform ideas into reality. Join our community where innovation thrives, and together, we'll shape the future of technology!
             </p>
           </div>
         </div>
       </div>
-
-      
     </>
   );
 };

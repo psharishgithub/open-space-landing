@@ -129,3 +129,17 @@ html{
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* or whatever maximum width you prefer */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

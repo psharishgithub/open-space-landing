@@ -4,6 +4,7 @@ import FabSocial from "./components/FabSocial";
 import Navbar from "./components/NavBar";
 import HomeC from "./components/HomeC";
 import Motive from "./components/Motive";
+import VideoSection from "./components/VideoSection"; // New import
 import SocialGird from "./components/SocialGird";
 import Features from "./components/Features"; 
 import FAQ from "./components/FAQ"; 
@@ -16,6 +17,7 @@ function App() {
       <DevelopmentNotice />
       <HomeC />
       <Motive />
+      <VideoSection /> {/* New component */}
       <Features /> 
       <FAQ />
       <FabSocial />

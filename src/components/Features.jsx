@@ -33,8 +33,6 @@ const Features = () => {
                         description="Take your projects to the next level. Get support to launch and advance your initiatives, fostering innovation and growth within our community."
                     />
                 </div>
-
-
             </div>
             <P1Slide />
             <P2Slide />

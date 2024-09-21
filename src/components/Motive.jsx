@@ -15,7 +15,7 @@ const Motive = () => {
         </div>
         <div className="bg-[#ffffff0d] p-8 rounded-lg border border-[#ffffff30] flex flex-row max-mobile:flex-col items-center justify-between max-laptop:flex-col-reverse">
           <div className="w-full max-w-[50%] max-mobile:max-w-full max-laptop:max-w-full max-laptop:mb-8 flex flex-col items-start max-mobile:items-center">
-            <p className="text-left text-xl max-mobile:text-md max-mobile:text-center max-laptop:text-center max-laptop:text-base text-white font-light">
+            <p className="text-white text-left text-xl max-mobile:text-md max-mobile:text-center max-laptop:text-center max-laptop:text-base font-light">
               Our mission is to ignite students' passion to unite, innovate, and create meaningful impact. Openspace is committed to fostering a vibrant environment where collaboration sparks fresh ideas and contributions to open-source projects lead to transformative solutions. We fuel innovation, encourage continuous learning, and support collective development. Join us in turning visionary ideas into remarkable realities!
             </p>
           </div>
