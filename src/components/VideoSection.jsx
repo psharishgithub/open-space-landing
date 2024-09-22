@@ -9,14 +9,16 @@ const VideoSection = () => {
           Our Initiative
         </HighlightText>
         <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 Aspect Ratio */}
-          <iframe 
+          <video 
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/TgnzF32-hLM?autoplay=1&mute=1&controls=0" 
+            src="https://whjttsz70mf29sus.public.blob.vercel-storage.com/OpenSpace-FinalDraft%20(1)-vWiJLqit5J7PJjPbtQnRS19PlrKc4q.mp4"
             title="Initiative Explanation Video" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+          />
         </div>
       </div>
     </div>
