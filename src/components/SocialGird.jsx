@@ -32,7 +32,7 @@ const people = [
       { name: "Manovikram - DevsRec", image: manovikram, linkedin: "https://www.linkedin.com/in/manovikramk/", instagram: "https://www.instagram.com/manov_ik/" },
       { name: "Hursun - DevsRec", image: hursun, linkedin: "https://www.linkedin.com/in/hursun-ss-377659233/", instagram: "https://www.instagram.com/__hursun_ss__" },
       { name: "Rakhul - Intellexa", image: rakhul, linkedin: "https://www.linkedin.com/in/rakhul/", instagram: "https://www.instagram.com/r.a.k.h.u.l/" },
-      { name: "Vishal - IEEECIS", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
+      { name: "Vishaal", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
       { name: "Vaideeshswaren - ELITE", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
       { name: "Prajein - GDSC", image: prajein, linkedin: "https://www.linkedin.com/in/prajeinck/", instagram: "https://www.instagram.com/prajeinck/" },
     ]
