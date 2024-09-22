@@ -6,7 +6,7 @@ const VideoSection = () => {
     <div className="w-full bg-black py-16">
       <div className="container mx-auto px-4">
         <HighlightText className="text-white text-4xl font-semibold text-center mb-8">
-          Our Initiative
+          Our Venture
         </HighlightText>
         <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* 16:9 Aspect Ratio */}
           <iframe
