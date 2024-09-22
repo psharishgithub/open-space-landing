@@ -12,6 +12,8 @@ import rakhul from "../assets_c/rakhul.png";
 import vishal from "../assets_c/vishal.jpg";
 import vaideeshswaren from "../assets_c/vaideeshswaren.webp";
 import prajein from "../assets_c/prajein.png";
+import adithya from "../assets_c/adithya.png";
+import prashant from "../assets_c/prashant.jpg";
 
 const people = [
   {
@@ -33,6 +35,14 @@ const people = [
       { name: "Vishal - IEEECIS", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
       { name: "Vaideeshswaren - ELITE", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
       { name: "Prajein - GDSC", image: prajein, linkedin: "https://www.linkedin.com/in/prajeinck/", instagram: "https://www.instagram.com/prajeinck/" },
+    ]
+  },
+  {
+    category: "Behind Social Media",
+    members: [
+      { name: "Adithya", image: adithya,  instagram: "https://www.instagram.com/adhhi.b?igsh=OXJiaDZ2OTIzOXZq&utm_source=qr" },
+      { name: "Prashanth", image: prashant,  instagram: "https://www.instagram.com/__prasanth_nj__?igsh=MTF1cDgwZWRyY2FrYg==" },
+      
     ]
   }
 ];
