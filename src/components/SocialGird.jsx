@@ -15,7 +15,7 @@ import prajein from "../assets_c/prajein.png";
 
 const people = [
   {
-    category: "Initiators",
+    category: "Founding Initiators",
     members: [
       { name: "Harish", image: harish, linkedin: "https://www.linkedin.com/in/harish-p-s-98a306249/", instagram: "https://www.instagram.com/literally_harish/" },
       { name: "Jeyanth", image: jeyanth, linkedin: "https://www.linkedin.com/in/jeyanth-v/", instagram: "https://www.instagram.com/jeyanth__jr/" },
@@ -25,14 +25,14 @@ const people = [
     ]
   },
   {
-    category: "Club Representatives",
+    category: "Representatives",
     members: [
-      { name: "Manovikram", image: manovikram, linkedin: "https://www.linkedin.com/in/manovikramk/", instagram: "https://www.instagram.com/manov_ik/" },
-      { name: "Hursun", image: hursun, linkedin: "https://www.linkedin.com/in/hursun-ss-377659233/", instagram: "https://www.instagram.com/__hursun_ss__" },
-      { name: "Rakhul", image: rakhul, linkedin: "https://www.linkedin.com/in/rakhul/", instagram: "https://www.instagram.com/r.a.k.h.u.l/" },
-      { name: "Vishal", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
-      { name: "Vaideeshswaren", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
-      { name: "Prajein", image: prajein, linkedin: "https://www.linkedin.com/in/prajeinck/", instagram: "https://www.instagram.com/prajeinck/" },
+      { name: "Manovikram - DevsRec", image: manovikram, linkedin: "https://www.linkedin.com/in/manovikramk/", instagram: "https://www.instagram.com/manov_ik/" },
+      { name: "Hursun - DevsRec", image: hursun, linkedin: "https://www.linkedin.com/in/hursun-ss-377659233/", instagram: "https://www.instagram.com/__hursun_ss__" },
+      { name: "Rakhul - Intellexa", image: rakhul, linkedin: "https://www.linkedin.com/in/rakhul/", instagram: "https://www.instagram.com/r.a.k.h.u.l/" },
+      { name: "Vishal - IEEECS", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
+      { name: "Vaideeshswaren - ELITE", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
+      { name: "Prajein - GDSC", image: prajein, linkedin: "https://www.linkedin.com/in/prajeinck/", instagram: "https://www.instagram.com/prajeinck/" },
     ]
   }
 ];

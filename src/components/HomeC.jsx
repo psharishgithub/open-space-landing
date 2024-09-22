@@ -150,7 +150,7 @@ const HomeC = () => {
   const modelPosition = [-10, 0, 0];
 
   return (
-    <>
+    <section id="home" className="mt-20">
       <div id="home" className="flex w-full h-screen m-auto">
         <div className="w-full flex justify-between mx-auto max-mobile:flex-col">
           <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[64%] max-mobile:h-[48%] max-mobile:mx-auto max-mobile:ml-auto">
@@ -190,7 +190,7 @@ const HomeC = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

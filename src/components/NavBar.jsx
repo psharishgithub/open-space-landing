@@ -20,6 +20,14 @@ const Navbar = () => {
           </div>
           <div className="">
             <a
+              href="#features"
+              className="text-white font-medium hover:cursor-pointer hover:[text-shadow:_0_0_12px_#fff] duration-100"
+            >
+              About
+            </a>
+          </div>
+          <div className="">
+            <a
               href="#faq"
               className="text-white font-medium hover:cursor-pointer hover:[text-shadow:_0_0_12px_#fff] duration-100"
             >
@@ -31,7 +39,7 @@ const Navbar = () => {
               href="#community"
               className="text-white font-medium hover:cursor-pointer hover:[text-shadow:_0_0_12px_#fff] duration-100"
             >
-              Community
+              Team
             </a>
           </div>
         </div>

@@ -6,8 +6,8 @@ import DevelopmentNotice from './DevelopmentNotice';
 
 const Features = () => {
     return (
-        <>
-            <div className="w-[80%] m-auto mt-40 mb-32 max-mobile:mt-14 max-mobile:mb-20">
+        <section id="features" className="pt-20">
+            <div className="w-[80%] m-auto mt-20 mb-16 max-mobile:mt-7 max-mobile:mb-10">
                 <HighlightText className="text-white text-4xl font-semibold mb-8 text-center">
                     About The Platform
                 </HighlightText>
@@ -36,7 +36,7 @@ const Features = () => {
             </div>
             <P1Slide />
             <P2Slide />
-        </>
+        </section>
     );
 };
 
