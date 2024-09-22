@@ -153,21 +153,12 @@ const HomeC = () => {
     <section id="home" className="mt-20">
       <div id="home" className="flex w-full h-screen m-auto">
         <div className="w-full flex justify-between mx-auto max-mobile:flex-col">
-          <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[64%] max-mobile:h-[48%] max-mobile:mx-auto max-mobile:ml-auto">
+          <div className="m-auto ml-[5%] w-[40%] h-[80%] max-mobile:w-[80%] max-mobile:h-[80%] max-mobile:mx-auto max-mobile:ml-auto">
             <div className="h-full">
               <Canvas key={Date.now()}>
-                <ambientLight intensity={4.2} />
-                <directionalLight position={[-5, 2, 5]} intensity={12.6} />
-                <pointLight position={[-8, 3, 8]} intensity={10.5} />
-                <pointLight position={[5, -2, -5]} intensity={5.25} />
-                <spotLight
-                  position={[-10, 5, 5]}
-                  angle={0.6}
-                  penumbra={1}
-                  intensity={12.6}
-                  castShadow
-                  target-position={[0, 0, 0]}
-                />
+                <ambientLight intensity={50} />
+                <directionalLight position={[-5, 2, 5]} intensity={80} />
+                
                 <ModelWithAnimation position={modelPosition} />
                 <OrbitControls
                   enableZoom={false}

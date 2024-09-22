@@ -18,6 +18,18 @@ const VideoSection = () => {
             allowFullScreen
           ></iframe>
         </div>
+        <div className="mt-4 text-white text-left">
+          <p className="text-base">
+            Video credits: {' '}
+            <a href="https://www.instagram.com/adhhi.b?igsh=OXJiaDZ2OTIzOXZq&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              Adhithya
+            </a>
+            {' '} and {' '}
+            <a href="https://www.instagram.com/__prasanth_nj__?igsh=MTF1cDgwZWRyY2FrYg==" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              Prasanth
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
