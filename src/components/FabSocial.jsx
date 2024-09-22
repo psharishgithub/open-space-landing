@@ -10,7 +10,7 @@ const FabSocial = () => {
         border-solid border-[#ffffff79] border-r border-b
         bg-[#ffffff1a] flex my-4"
       >
-        <a href="https://github.com/OpenSpaceREC">
+        <a href="https://github.com/OpenSpace-REC">
           <img src={github_svg} alt="github" className="h-8 m-auto  " />
         </a>
       </div>
