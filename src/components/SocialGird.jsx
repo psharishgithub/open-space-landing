@@ -14,8 +14,15 @@ import vaideeshswaren from "../assets_c/vaideeshswaren.webp";
 import prajein from "../assets_c/prajein.png";
 import adithya from "../assets_c/adithya.png";
 import prashant from "../assets_c/prashant.jpg";
+import muralibhaskaran from "../assets_c/muralibhaskaran.jpg"
 
 const people = [
+  {
+    category: "Staff Coordinator",
+    members: [
+      { name: "Murali Bhaskaran Venugopal", image: muralibhaskaran, linkedin: "https://www.linkedin.com/in/murali-bhaskaran-venugopal-6b95832b/", instagram: "" },
+    ]
+  },
   {
     category: "Founding Initiators",
     members: [
