@@ -5,7 +5,7 @@ import harish from "../assets_c/harish.webp";
 import jeyanth from "../assets_c/jeyanth.webp";
 import rithesh from "../assets_c/rithesh.webp";
 import swayam from "../assets_c/swayam.webp";
-import noumaan from "../assets_c/noumaan.webp";
+import noumaan from "../assets_c/noumaan.jpeg";
 import manovikram from "../assets_c/manovikram.webp";
 import hursun from "../assets_c/hursun.png";
 import rakhul from "../assets_c/rakhul.png";
@@ -40,7 +40,7 @@ const people = [
       { name: "Hursun - DevsRec", image: hursun, linkedin: "https://www.linkedin.com/in/hursun-ss-377659233/", instagram: "https://www.instagram.com/__hursun_ss__" },
       { name: "Rakhul - Intellexa", image: rakhul, linkedin: "https://www.linkedin.com/in/rakhul/", instagram: "https://www.instagram.com/r.a.k.h.u.l/" },
       { name: "Vishaal", image: vishal, linkedin: "https://www.linkedin.com/in/vishaal-k-783894202/", instagram: "https://www.instagram.com/vishaal_19_fl/" },
-      { name: "Vaideeshswaran - ELITE", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
+      { name: "Vaideeshwaran - ELITE", image: vaideeshswaren, linkedin: "https://www.linkedin.com/in/vaideeshwaran-r-1b4375252/", instagram: "https://www.instagram.com/vaidesh._/" },
       { name: "Prajein - GDSC", image: prajein, linkedin: "https://www.linkedin.com/in/prajeinck/", instagram: "https://www.instagram.com/prajeinck/" },
     ]
   },
