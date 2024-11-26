@@ -2,7 +2,6 @@ import React from "react";
 import P1Slide from "./slide/p1_slide";
 import P2Slide from "./slide/p2_slide";
 import HighlightText from './HighlightText';
-import DevelopmentNotice from './DevelopmentNotice';
 
 const Features = () => {
     return (
