@@ -28,7 +28,7 @@ const Navbar = () => {
           </h1>
         </div>
 
-        {/* Hamburger Menu Button */}
+
         <button 
           className="hidden max-mobile:block text-white"
           onClick={toggleMenu}
@@ -44,7 +44,7 @@ const Navbar = () => {
           )}
         </button>
 
-        {/* Desktop Menu */}
+
         <div className="flex justify-center gap-12 text-lg items-center max-mobile:hidden">
           <NavLink href="#home">Home</NavLink>
           <NavLink href="#features">About</NavLink>
@@ -59,7 +59,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu */}
+
         {isMenuOpen && (
           <div className="hidden max-mobile:block fixed top-[73px] left-0 right-0 bg-black backdrop-blur-xl border-b border-[#ffffff15] z-[90]">
             <nav className="flex flex-col items-center py-6 gap-6">
